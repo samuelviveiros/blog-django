@@ -1,0 +1,5 @@
+{% for object in object_list %}
+    <h2><a href="{{ object.get_absolute_url }}">{{ object }}</a></h2>
+{% empty %}
+    <h2>Objects not found!</h2>
+{% endfor %}
